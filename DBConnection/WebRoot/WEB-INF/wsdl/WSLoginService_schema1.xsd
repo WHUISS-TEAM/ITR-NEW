@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://dbConnection/" targetNamespace="http://dbConnection/" version="1.0">
+
+  <xs:element name="verifyUser" type="tns:verifyUser"/>
+
+  <xs:element name="verifyUserResponse" type="tns:verifyUserResponse"/>
+
+  <xs:complexType name="verifyUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:profile"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="profile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="user_academy" type="xs:string"/>
+      <xs:element name="user_age" type="xs:int"/>
+      <xs:element minOccurs="0" name="user_avatar" type="xs:string"/>
+      <xs:element minOccurs="0" name="user_email" type="xs:string"/>
+      <xs:element name="user_gender" type="xs:int"/>
+      <xs:element name="user_id" type="xs:int"/>
+      <xs:element minOccurs="0" name="user_introduction" type="xs:string"/>
+      <xs:element minOccurs="0" name="user_major" type="xs:string"/>
+      <xs:element minOccurs="0" name="user_name" type="xs:string"/>
+      <xs:element minOccurs="0" name="user_password" type="xs:string"/>
+      <xs:element minOccurs="0" name="user_school" type="xs:string"/>
+      <xs:element minOccurs="0" name="user_tag" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="verifyUserResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:profile"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

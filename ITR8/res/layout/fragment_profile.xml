@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/org.itrgroup.itr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/theme_bg">    
+
+    <LinearLayout
+   		android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:layout_weight="2.2" >
+    	
+       <RelativeLayout
+            android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="vertical" >
+        	
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+        		android:background="#06ffffff" />
+			
+			<Button
+	  			android:id="@+id/center" 
+	    		android:layout_height="0dp"
+	    		android:layout_width="0dp"
+	    		android:layout_centerHorizontal="true" 
+	    		android:layout_centerVertical="true" />
+			    
+			<org.itrgroup.itr.utils.CircleImageView 
+			    android:id="@+id/avatar"
+			    android:layout_width="108dp"
+			    android:layout_height="108dp"
+			    android:layout_centerHorizontal="true"
+			    android:layout_above="@id/center" 
+			    android:layout_marginBottom="-25dp"
+			    android:src="@drawable/theme_bg"
+			    app:border_color="#ffffff"
+			    app:border_width="4dp" />
+
+            <TextView
+				android:id="@+id/username"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_below="@id/center"
+				android:layout_marginTop="35dp"
+				android:text="Username"
+				android:textSize="24sp"
+				android:textColor="#C8000000"
+				android:textStyle="bold" />
+            
+     		<ImageView
+	            android:id="@+id/gender"
+	            android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_alignBottom="@id/username"
+	            android:layout_toRightOf="@id/username"
+               	android:layout_marginLeft="6dp"
+               	android:layout_marginBottom="5dp"
+	            android:background="@drawable/profile_gender_male" />
+			
+           <TextView
+				android:id="@+id/introduction"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_below="@id/username"
+				android:layout_marginTop="6dp"
+				android:text="软件工程专业新生。"
+				android:textSize="16sp"
+				android:textColor="#94000000" />
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+   		android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:layout_weight="2.5" >
+       	
+        <RelativeLayout
+            android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="vertical">
+           
+            <ImageView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+        		android:background="#D7ffffff" />
+            
+            <Button
+	  			android:id="@+id/center_two" 
+	    		android:layout_height="0dp"
+	    		android:layout_width="0dp"
+	    		android:layout_centerHorizontal="true" 
+	    		android:layout_centerVertical="true" />
+            
+            <TextView 
+             	android:id="@+id/academy"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_above="@id/center_two"
+	        	android:layout_toLeftOf="@id/center_two"
+	        	android:layout_marginBottom="6dp"
+	        	android:layout_marginRight="40dp"
+	        	android:text="院系 ："
+	        	android:textSize="18sp"
+	        	android:textColor="#C8000000"
+	        	android:textStyle="bold" />
+            
+            <TextView 
+             	android:id="@+id/user_academy"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_above="@id/center_two"
+	        	android:layout_toRightOf="@id/center_two"
+	        	android:layout_marginBottom="6dp"
+	        	android:layout_marginLeft="2dp"
+	        	android:text="国际软件学院"
+	        	android:textSize="18sp"
+	        	android:textColor="#C8000000" />
+            
+            <TextView 
+             	android:id="@+id/school"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_above="@id/academy"
+	        	android:layout_toLeftOf="@id/center_two"
+	        	android:layout_marginBottom="12dp"
+	        	android:layout_marginRight="40dp"
+	        	android:text="大学 ："
+	        	android:textSize="18sp"
+	        	android:textColor="#C8000000"
+	        	android:textStyle="bold" />
+            
+            <TextView 
+             	android:id="@+id/user_school"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_above="@id/user_academy"
+	        	android:layout_toRightOf="@id/center_two"
+	        	android:layout_marginBottom="12dp"
+	        	android:layout_marginLeft="2dp"
+	        	android:text="武汉大学"
+	        	android:textSize="18sp"
+	        	android:textColor="#C8000000" />
+            
+            <TextView 
+             	android:id="@+id/major"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_below="@id/center_two"
+	        	android:layout_toLeftOf="@id/center_two"
+	        	android:layout_marginTop="6dp"
+	        	android:layout_marginRight="40dp"
+	        	android:text="专业 ："
+	        	android:textSize="18sp"
+	        	android:textColor="#C8000000"
+	        	android:textStyle="bold" />
+            
+           <TextView 
+             	android:id="@+id/user_major"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_below="@id/center_two"
+	        	android:layout_toRightOf="@id/center_two"
+	        	android:layout_marginTop="6dp"
+	        	android:layout_marginLeft="2dp"
+	        	android:text="软件工程"
+	        	android:textSize="18sp"
+	        	android:textColor="#C8000000" />
+
+            <TextView 
+             	android:id="@+id/age"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_below="@id/major"
+	        	android:layout_toLeftOf="@id/center_two"
+	        	android:layout_marginTop="12dp"
+	        	android:layout_marginRight="40dp"
+	        	android:text="年龄 ："
+	        	android:textSize="18sp"
+	        	android:textColor="#C8000000"
+	        	android:textStyle="bold" />
+            
+           <TextView 
+             	android:id="@+id/user_age"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_below="@id/user_major"
+	        	android:layout_toRightOf="@id/center_two"
+	        	android:layout_marginTop="12dp"
+	        	android:layout_marginLeft="2dp"
+	        	android:text="18 岁"
+	        	android:textSize="18sp"
+	        	android:textColor="#C8000000" />        
+            
+            <TextView 
+             	android:id="@+id/divider"
+	        	android:layout_width="match_parent"
+	        	android:layout_height="1dp"
+				android:layout_marginLeft="32dp"
+				android:layout_marginRight="32dp"
+		        android:background="@color/divider_color"
+				android:layout_alignParentBottom="true"
+		        android:alpha="0.3" />
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+   		android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:layout_weight="2.6" >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="vertical">
+            
+            <ImageView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+        		android:background="#D7ffffff" />
+            
+            <Button
+	  			android:id="@+id/center_three" 
+	    		android:layout_height="0dp"
+	    		android:layout_width="0dp"
+	    		android:layout_centerHorizontal="true" 
+	    		android:layout_centerVertical="true" />
+           
+            <TextView 
+                android:id="@+id/user_tag_2"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_above="@id/center_three"
+	        	android:layout_toLeftOf="@id/center_three"
+	        	android:layout_marginBottom="32dp"
+	        	android:layout_marginRight="7dp"
+	        	android:text=""
+	        	android:textSize="18sp"
+				android:textColor="#94000000" />
+            
+            <TextView 
+                android:id="@+id/user_tag_1"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_above="@id/center_three"
+	        	android:layout_toLeftOf="@id/user_tag_2"
+	        	android:layout_marginRight="14dp"
+	        	android:layout_marginBottom="32dp"
+	        	android:text=""
+	        	android:textSize="18sp"
+				android:textColor="#94000000" />
+            
+           	<TextView 
+                android:id="@+id/user_tag_3"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_above="@id/center_three"
+	        	android:layout_toRightOf="@id/center_three"
+	        	android:layout_marginLeft="7dp"
+	        	android:layout_marginBottom="32dp"
+	        	android:text=""
+	        	android:textSize="18sp"
+				android:textColor="#94000000" />
+           	
+           	<TextView 
+                android:id="@+id/user_tag_4"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_above="@id/center_three"
+	        	android:layout_toRightOf="@id/user_tag_3"
+	        	android:layout_marginLeft="14dp"
+	        	android:layout_marginBottom="32dp"
+	        	android:text=""
+	        	android:textSize="18sp"
+				android:textColor="#94000000" />
+           	
+           	<TextView 
+                android:id="@+id/user_tag_6"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_above="@id/center_three"
+	        	android:layout_toLeftOf="@id/center_three"
+	        	android:layout_marginRight="7dp"
+	        	android:text=""
+	        	android:textSize="18sp"
+				android:textColor="#94000000" />
+            
+            <TextView 
+                android:id="@+id/user_tag_5"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_above="@id/center_three"
+	        	android:layout_alignLeft="@id/user_tag_1"
+	        	android:layout_marginRight="14dp"
+	        	android:text=""
+	        	android:textSize="18sp"
+				android:textColor="#94000000" />
+            
+           	<TextView 
+                android:id="@+id/user_tag_7"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_above="@id/center_three"
+	        	android:layout_toRightOf="@id/center_three"
+	        	android:layout_marginLeft="7dp"
+	        	android:text=""
+	        	android:textSize="18sp"
+				android:textColor="#94000000" />
+           	
+           	<TextView 
+                android:id="@+id/user_tag_8"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_above="@id/center_three"
+	        	android:layout_toRightOf="@id/user_tag_7"
+	        	android:layout_marginLeft="14dp"
+	        	android:text=""
+	        	android:textSize="18sp"
+				android:textColor="#94000000" />
+           	
+            <Button 
+                android:id="@+id/my_published"
+                android:layout_height="49dp"
+                android:layout_width="match_parent"
+                android:layout_toLeftOf="@id/center_three"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/profile_published_selection" 
+                android:text="我 的 发 布"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+            
+           	<Button 
+                android:id="@+id/edit_profile"
+                android:layout_height="49dp"
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@id/center_three"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/profile_edit_selection" 
+                android:text="修 改 资 料" 
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+    
+</LinearLayout>

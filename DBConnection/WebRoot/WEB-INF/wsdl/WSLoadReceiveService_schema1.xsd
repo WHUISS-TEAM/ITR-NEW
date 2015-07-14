@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://dbConnection/" targetNamespace="http://dbConnection/" version="1.0">
+
+  <xs:element name="Load" type="tns:Load"/>
+
+  <xs:element name="LoadResponse" type="tns:LoadResponse"/>
+
+  <xs:complexType name="Load">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="LoadResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:receiveModel"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="receiveModel">
+    <xs:sequence>
+      <xs:element name="pub_inforId" type="xs:int"/>
+      <xs:element minOccurs="0" name="pub_userName" type="xs:string"/>
+      <xs:element minOccurs="0" name="pub_userAvatar" type="xs:string"/>
+      <xs:element minOccurs="0" name="pub_time" type="xs:string"/>
+      <xs:element minOccurs="0" name="pub_loc" type="xs:string"/>
+      <xs:element minOccurs="0" name="pub_content" type="xs:string"/>
+      <xs:element name="pub_tag_level1" type="xs:int"/>
+      <xs:element minOccurs="0" name="pub_tag_level2" type="xs:string"/>
+      <xs:element name="vote_num" type="xs:int"/>
+      <xs:element name="com_num" type="xs:int"/>
+      <xs:element name="share_num" type="xs:int"/>
+      <xs:element name="user_id" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

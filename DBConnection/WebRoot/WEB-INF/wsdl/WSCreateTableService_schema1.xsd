@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://dbConnection/" targetNamespace="http://dbConnection/" version="1.0">
+
+  <xs:element name="createTables" type="tns:createTables"/>
+
+  <xs:element name="createTablesResponse" type="tns:createTablesResponse"/>
+
+  <xs:complexType name="createTables">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createTablesResponse">
+    <xs:sequence/>
+  </xs:complexType>
+</xs:schema>

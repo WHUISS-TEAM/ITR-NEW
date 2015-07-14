@@ -1,0 +1,43 @@
+<?xml version = "1.0"?>
+<endpoints version="2.0"
+	xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime">
+	<endpoint name="WSLoginPort"
+		implementation="dbConnection.WSLoginDelegate"
+		url-pattern="/WSLoginPort">
+	</endpoint>
+	<endpoint name="WSRegisterPort"
+		implementation="dbConnection.WSRegisterDelegate"
+		url-pattern="/WSRegisterPort">
+	</endpoint>
+	<endpoint name="WSCreateTablePort"
+		implementation="dbConnection.WSCreateTableDelegate"
+		url-pattern="/WSCreateTablePort">
+	</endpoint>
+	<endpoint name="WSPublishPort"
+		implementation="dbConnection.WSPublishDelegate"
+		url-pattern="/WSPublishPort">
+	</endpoint>
+	<endpoint name="WSLoadReceivePort"
+		implementation="dbConnection.WSLoadReceiveDelegate"
+		url-pattern="/WSLoadReceivePort">
+	</endpoint>
+	<endpoint name="WSEditProfilePort"
+		implementation="dbConnection.WSEditProfileDelegate"
+		url-pattern="/WSEditProfilePort">
+	</endpoint>
+	<endpoint name="WSRefreshReceivePort"
+		implementation="dbConnection.WSRefreshReceiveDelegate"
+		url-pattern="/WSRefreshReceivePort">
+	</endpoint>
+	<endpoint name="WSDownloadAvatarPort"
+		implementation="dbConnection.WSDownloadAvatarDelegate"
+		url-pattern="/WSDownloadAvatarPort">
+	</endpoint>
+	<endpoint name="WSCommentPort"
+		implementation="dbConnection.WSCommentDelegate"
+		url-pattern="/WSCommentPort">
+	</endpoint>
+	<endpoint name="WSLoadcommentPort"
+		implementation="dbConnection.WSLoadcommentDelegate"
+		url-pattern="/WSLoadcommentPort">
+	</endpoint></endpoints>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://dbConnection/" targetNamespace="http://dbConnection/" version="1.0">
+
+  <xs:element name="loadComment" type="tns:loadComment"/>
+
+  <xs:element name="loadCommentResponse" type="tns:loadCommentResponse"/>
+
+  <xs:complexType name="loadComment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:commentPub"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="commentPub">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="com_content" type="xs:string"/>
+      <xs:element name="com_id" type="xs:int"/>
+      <xs:element minOccurs="0" name="com_location" type="xs:string"/>
+      <xs:element name="com_pub_id" type="xs:int"/>
+      <xs:element minOccurs="0" name="com_time" type="xs:string"/>
+      <xs:element minOccurs="0" name="com_user_avatar" type="xs:string"/>
+      <xs:element name="com_user_id" type="xs:int"/>
+      <xs:element minOccurs="0" name="com_user_name" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="loadCommentResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:commentPub"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
