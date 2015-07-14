@@ -23,7 +23,7 @@ public class PublishmentDaoImpl implements PublishmentDao {
 		//first insert the pub into the publishment table
 		PreparedStatement prepared = conn.prepareStatement("INSERT INTO publishment " +
 				"(pub_user_id,pub_user_name,pub_user_avatar,pub_time,pub_location,pub_content," +
-				"pub_tag_level_1,pub_tag_level_2) VALUES (?,?,?,?,?,?,?,?)", Statement.RETURN_GENERATED_KEYS);
+				"pub_tag_level_1) VALUES (?,?,?,?,?,?,?)", Statement.RETURN_GENERATED_KEYS);
 		prepared.setInt(1,pub.getPub_user_id());
 		prepared.setString(2,pub.getPub_user_name());
 		prepared.setString(3, pub.getPub_user_avatar());
@@ -31,7 +31,6 @@ public class PublishmentDaoImpl implements PublishmentDao {
 		prepared.setString(5, pub.getPub_location());
 		prepared.setString(6, pub.getPub_content());
 		prepared.setInt(7,pub.getPub_tag_level_1());
-		prepared.setString(8, pub.getPub_tag_level_2());
 		prepared.execute();
 		if(prepared.getUpdateCount() != -1){
 			//which means the insertion success
